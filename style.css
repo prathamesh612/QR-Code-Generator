@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
+
+:root {
+    --primaryColor: #fff;
+    --secondaryColor: #000;
+    --bgColor1: #ffffff1a;
+    --bgColor2: #3a4147;
+    --btnbg1: #e1621e;
+    --btnbg2: #a54115;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondaryColor);
+}
+
+h1 {
+    color: var(--primaryColor);
+    text-align: center;
+    margin: 40px;
+    font-size: clamp(1.875rem, 1.0938rem + 2.5vw, 2.5rem);
+    font-family: "Cormorant Garamond", serif;
+}
+
+.main {
+    width: 340px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid var(--primaryColor);
+    border-radius: 5px;
+}
+
+.main .qrCode {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    background-color: var(--bgColor1);
+    border-radius: 20px;
+
+}
+
+img {
+    border-radius: 20px;
+}
+
+select {
+    width: 270px;
+    height: 40px;
+    font-weight: 700;
+    border: none;
+    color: var(--primaryColor);
+    background-color: var(--bgColor2);
+    border-radius: 3px;
+}
+
+textarea {
+    width: 270px;
+    margin: 20px;
+    border: none;
+    padding: 4px;
+    color: var(--primaryColor);
+    font-size: 15px;
+    background-color: var(--bgColor2);
+    border-radius: 3px;
+}
+
+.btnsDiv {
+    width: 270px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 130px 130px;
+    gap: 10px;
+}
+
+.btn {
+    font-size: 18px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    background-color: var(--btnbg1);
+    color: var(--primaryColor);
+    border-radius: 3px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--btnbg2);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+h5 {
+    color: var(--primaryColor);
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #ffffffc6;
+}

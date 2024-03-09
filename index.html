@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://iili.io/JMr5CT7.md.jpg">
+    <title>Text to QR code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Qr Code Generator</h1>
+    <div class="main">
+
+        <div class="qrCode">
+            <img src="" id="Img">
+        </div>
+
+        <select name="size" id="size">
+            <option value="100">100x100</option>
+            <option value="150">150x150</option>
+            <option value="200" selected>200x200</option>
+            <option value="250">250x250</option>
+            <option value="300">300x300</option>
+        </select>
+
+        <textarea name="content" id="qrText" cols="30" rows="5" placeholder="Type Here..."></textarea>
+
+        <div class="btnsDiv">
+            <input type="submit" value="Generate" onclick="genQR()" class="btn">
+            <input type="submit" value="Download" onclick="download()" class="btn">
+        </div>
+        <h5>Developed By Prathamesh Kumbhar</h5>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
