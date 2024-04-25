@@ -1,5 +1,4 @@
 function genQR() {
-    var gApi = "https://chart.googleapis.com/chart?cht=qr&chs=";
     var myImg = document.getElementById('Img');
     var myText = document.getElementById('qrText').value;
     var mySize = document.getElementById('size').value;
@@ -37,5 +36,5 @@ function download() {
 }
 
 function generateQRCodeUrl(size, text) {
-    return "https://chart.googleapis.com/chart?cht=qr&chs=" + size + "x" + size + "&chl=" + text;
+    return "https://quickchart.io/qr?text=" + text + "&ecLevel=Q&margin=2&size=" + size;
 }

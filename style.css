@@ -44,14 +44,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 30px 0;
     background-color: var(--bgColor1);
     border-radius: 20px;
 
 }
 
 img {
-    border-radius: 20px;
+    border-radius: 4px;
 }
 
 select {
@@ -64,9 +64,10 @@ select {
     border-radius: 3px;
 }
 
-textarea {
+.text {
     width: 270px;
-    margin: 20px;
+    height: 40px;
+    margin: 30px;
     border: none;
     padding: 4px;
     color: var(--primaryColor);
